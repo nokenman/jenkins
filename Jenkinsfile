@@ -14,9 +14,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Menjalankan test...'
+
                 sh '''
-                    python -m pip install -r requirements.txt
-                    python -m pytest
+                    python3 -m venv .venv
+                    .venv/bin/pip install -r requirements.txt
+                    .venv/bin/pytest
                 '''
             }
         }
