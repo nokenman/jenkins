@@ -10,7 +10,7 @@ def home():
     return f"""
     <html>
         <body>
-            <h1>Hello Jenkins!</h1>
+            <h1>Hello Fais!</h1>
             <p>Build number: {build_number}</p>
         </body>
     </html>
@@ -18,4 +18,3 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-    
