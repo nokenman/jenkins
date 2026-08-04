@@ -43,7 +43,7 @@ pipeline {
 
                     docker run -d \
                         --name jenkins-demo \
-                        -p 5000:5000 \
+                        -p 5002:5000 \
                         -e BUILD_NUMBER=${BUILD_NUMBER} \
                         jenkins-demo:${BUILD_NUMBER}
                 '''
